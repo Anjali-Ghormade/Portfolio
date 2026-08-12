@@ -29,7 +29,7 @@ https://anjali-ghormade.github.io/Portfolio/
 
 # PreView
 
-![local]
+![Landing Page](./photos/screenShot.png)
 
 # About Me
 
