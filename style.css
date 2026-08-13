@@ -682,6 +682,7 @@ form button:hover{
     .nav2{
         position: absolute;
         top: 50px;
+        border-radius: 15px;
         right: 0;
         background: #1f2937;
         width: 40%;
