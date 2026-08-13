@@ -527,13 +527,16 @@ button i{
     display: flex;
     gap: 10px;
     padding-right: 50px;
+    width: 100%;
+    margin: auto;
     color: white;
     flex-wrap: wrap;
 }
 .option{
-    margin-top: 20px;
+    margin-top: auto;
     width: 100%;
     border-radius: 20px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -711,10 +714,8 @@ form button:hover{
         padding: 80px 10px;
     }
     .hero-img img{
-        height: 400px;
-        width: 350px;
-        border-radius: 50%;
-        object-fit: cover;
+        height: 390px;
+        width: 390px; 
     }
     .hero-data{
         width: 100%;
@@ -768,6 +769,12 @@ form button:hover{
         width: 100%;
         padding: 5px 0;
     }
+    .about2-right h2{
+        font-size: 30px;
+    }
+    .about2-right h2 span{
+        font-size: 25px;
+    }
     .cards{
        display: grid;
        grid-template-columns: repeat(1, 1fr);
@@ -790,6 +797,7 @@ form button:hover{
    }
    .card-content{
     margin-left: 20px;
+    white-space: nowrap;
    }
    .card i{
     font-size: 30px;
@@ -797,19 +805,31 @@ form button:hover{
     color: #8b5cf6;
     }
     .about2-right .states{
-        display: flex;
+        /* display: flex;
         margin-top: 20px;
-        margin-left: 0;
         font-size: 10px;
         gap: 25px;
-        padding: 15px 0;
+        padding: 15px 0; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+        column-gap: 20px;
+        row-gap: 50px;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        margin: 40px auto 20px;
+        padding: 0 20px;
     }
     .states h2{
-    color: #8b5cf6;
-    font-size: 25px;
+        margin-bottom: 8px;
+        color: #8b5cf6;
+        font-size: 32px;
     }
     .states p{
-        font-size: 12px;
+        margin: 0;
+        line-height: 1.6;
+        font-size: 16px;
     }
     .skill{
         padding-top: 4px;
@@ -841,42 +861,48 @@ form button:hover{
     }
     
     #project{
-     padding: 25px 20px;
+     padding: 25px 15px;
      width: 100%;
     }
     .project-bottom button{
      margin: 40px 0;
-     font-size: 15px;
+     font-size: 12px;
      padding: 20px 20px;
     }
     .project-live button{
      width: 100%;
-     font-size: 17px;
+     font-size: 15px;
     }
    .project-tech{
      display: flex;
      gap: 30px;
+     align-items: center;
+     justify-content: center;
     }
    .project-section{
-     padding: 20px 20px;
+     padding-top: 20px;
      display: flex;
+     align-items: center;
+     gap: 30px;
      flex-direction: column;
     }
     .projects img{
-     width: 350px;
+     max-width: 100%;
+     overflow: hidden;
     }
    .project-bottom{
      flex-direction: column;
     }
-
 
     .contact{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .option{
-        width: 100%;
+    .options{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
     .info{
         width: 100%;
@@ -886,23 +912,38 @@ form button:hover{
         padding-left: 0;
         padding-top: 10px;
     }
-    input{
+    .option{
         width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .option-data{
+        width: 100%;
+        white-space: nowrap;
+    }
+    
+    .info h2{
+        white-space: nowrap;
+    }
+    input{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
     }
     #input3{
-    padding-right: 20px;
+        padding-right: 40px;
     }
     #input4{
-    padding-right: 20px;
-    padding-bottom: 100px;
+       padding-right: 80px;
+       padding-bottom: 100px;
     }
     form button{
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     background-color: #7c3aed;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     }
     footer{
@@ -933,4 +974,5 @@ form button:hover{
      padding-right: 5px;
     }
     
+  
 }
